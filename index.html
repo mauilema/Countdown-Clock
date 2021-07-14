@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Countdown Clock">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+#Starting-Value {
+  font-weight: bolder;
+  font-size: 99px;
+  color: #e4e9f2;
+  text-align: center;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+ padding-bottom: 30px;
+}
+body {
+  background-color: #1E1C1D
+}
+h2 {
+  color: #a11c08;
+  font-family: Impact, fantasy;
+  text-shadow: 1px 1px 2px     white;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  
+ }
+.container {
+  height: 325px;
+  width: 800px;
+  border: 10px solid white;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+</style>
+</head>
+<body>
+  <div class = "container">
+    <h2>Countdown Timer</h2>
+    <h1 id = "Starting-Value">5</h1>
+  </div>
+<script id="jsbin-javascript">
+let timeRemaining = 5
+let timerElement = document.getElementById("Starting-Value")
+function countDown () {
+  timeRemaining = timeRemaining - 1
+  if (timeRemaining <=0) {
+    timerElement.innerText = "Time is Up!"
+  } else {
+      timerElement.innerText = timeRemaining
+  }
+}
+setInterval(countDown,1000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let heading = document.getElementById("project-title")
+// console.log(heading.innerText)
+// heading.innerText = "Something Else"
+</script>
+
+
+<script id="jsbin-source-css" type="text/css">#Starting-Value {
+  font-weight: bolder;
+  font-size: 99px;
+  color: #e4e9f2;
+  text-align: center;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+ padding-bottom: 30px;
+}
+body {
+  background-color: #1E1C1D
+}
+h2 {
+  color: #a11c08;
+  font-family: Impact, fantasy;
+  text-shadow: 1px 1px 2px     white;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  
+ }
+.container {
+  height: 325px;
+  width: 800px;
+  border: 10px solid white;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<script id="jsbin-source-javascript" type="text/javascript">let timeRemaining = 5
+let timerElement = document.getElementById("Starting-Value")
+function countDown () {
+  timeRemaining = timeRemaining - 1
+  if (timeRemaining <=0) {
+    timerElement.innerText = "Time is Up!"
+  } else {
+      timerElement.innerText = timeRemaining
+  }
+}
+setInterval(countDown,1000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let heading = document.getElementById("project-title")
+// console.log(heading.innerText)
+// heading.innerText = "Something Else"
+</script></body>
+</html>
